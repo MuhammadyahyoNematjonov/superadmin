@@ -6,7 +6,7 @@ import { where } from 'sequelize';
 import { User } from 'src/model/user.model';
 
 @Injectable()
-export class UserService {
+export class UsersService {
   constructor(@InjectModel(User)private userModel: typeof User,) {}
     async createuser(payload: Partial<User>) {
         let newuser = await this.userModel.create(payload)

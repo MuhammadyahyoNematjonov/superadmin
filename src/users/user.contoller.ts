@@ -1,5 +1,5 @@
 import { Body,Controller,Delete,Get,Param,Post, Put } from "@nestjs/common";
-import { UserService } from "../users/user.servers"
+import { UserService } from "./users.servers"
 import {User} from 'src/model/user.model'
 import { BadRequestException } from '@nestjs/common';
 
